@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Outfit;
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Outfit, sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.NFT-card {
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+
+    height: 490px;
+    width: 300px;
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.NFT-image {
+    aspect-ratio: 1;
+    width: 85%;
+    margin: 25px auto 0 auto;
+    border-radius: 5px;
+}
+
+.NFT-image:hover {
+    cursor: pointer;
+}
+
+.NFT-image img {
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    border-radius: 5px;
+}
+
+.eye-container {
+    display: flex;
+    z-index: 8;
+    position: absolute;
+    width: 255px;
+    height: 255px;
+    opacity: 0;
+    background-color: rgba(0, 235, 227, 0.7);
+    border-radius: 5px;
+}
+
+.eye-container img {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin: auto auto auto auto;
+}
+
+.eye-container:hover {
+    opacity: 1;
+}
+
+.name-card, .information, .author {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+h3 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+h3.name-card:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.information .description {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.price-and-time {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.price-and-time p {
+    margin: 0 0 0 5px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+}
+
+img.eth-logo {
+    height: 18px;
+    width: 11px;
+    margin: auto 0 auto 0;
+}
+
+img.time-icon {
+    height: 17px;
+    width: 17px;
+    margin: auto 0 auto 0;
+}
+
+p.price-text {
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    margin: auto auto auto 4px;
+}
+
+p.auction-end {
+    font-size: 14px;
+    margin: auto auto auto 6px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 85%;
+    border: 0;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.author {
+    display: flex;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 0;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.author p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 5px;
+}
+
+.author a {
+    color: white;
+}
+
+.author a:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 3px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
